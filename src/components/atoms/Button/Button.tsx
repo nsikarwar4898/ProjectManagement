@@ -1,6 +1,6 @@
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-import { buttonProps } from './index';
+import { buttonProps } from './Button/index';
 
 const CustomButton=({variant='outlined',styles={},name='button'}:buttonProps)=> {
     return (
