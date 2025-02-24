@@ -11,8 +11,8 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import CustomButton from '../atoms/Button';
-import { BorderColor } from '@mui/icons-material';
+import CustomButton from '../atoms/Button/Button';
+
 
 const pages = ['Projects', 'Products'];
 const settings = ['Signup', 'Login'];
@@ -41,7 +41,7 @@ const Navbar = () => {
     };
 
     return (
-        <AppBar position="static" sx={{ backgroundColor: 'white',boxShadow:'none' }}>
+        <AppBar position="static" sx={{ backgroundColor: 'white',boxShadow:'none'}}>
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
                     <Typography
