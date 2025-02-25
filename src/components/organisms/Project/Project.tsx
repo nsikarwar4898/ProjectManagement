@@ -7,14 +7,16 @@ import { projectProps } from './index';
 
 const Project = ({ progress="In Progress",
    wrapper="bg-secondaryBlue max-h-max p-2 rounded-2xl m-2",
+   mode,
     wordColor="text-tertiaryBlue font-medium",
      icon=faHeart,
       src=CompanyOne }: projectProps) => {
   return (
-    <div className="flex flex-col items-center justify-center  md:w-80 md:m-2 ">
+    <div className="flex flex-col items-center justify-center   md:m-2 ">
       <div className=" mt-2 rounded-t-xl flex flex-col justify-between   bg-gradient-to-b from-gray-100 via-gray-500 to-black h-52 w-4/5 md:w-full">
         <div className="flex justify-between">
           <Progress
+            Icon={mode}
             name={progress}
             wrapper={wrapper}
             wordColor={wordColor}

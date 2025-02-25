@@ -1,19 +1,16 @@
-import { progressProps } from '.';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { progressProps } from './index';
 
 const Progress = ({
-  wrapper="", 
-  color = 'bg-white',
-  icon ,
+  wrapper = '',
+  Icon,
   name = 'In Progress',
-  wordColor='white'
+  wordColor = 'white',
 }: progressProps) => {
   return (
-    <div  className={`${wrapper}`}>
-      {icon && (
-        <FontAwesomeIcon icon={icon} className={`${color}`} />
-      )}
-      {name && <span className={`${wordColor}`} >{name}</span>}
+    <div className={`${wrapper}`}>
+      {Icon && <Icon />}
+
+      {name && <span className={`${wordColor}`}>{name}</span>}
     </div>
   );
 };

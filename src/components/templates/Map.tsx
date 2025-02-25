@@ -3,11 +3,11 @@ import "leaflet/dist/leaflet.css";
 
 const MyMap = () => {
   return (
-    <div className=" border-4 border-black flex justify-center items-center ">
+    <div className=" m-12 md:m-0  flex justify-center items-center ">
       <MapContainer 
         center={[51.505, -0.09]} 
         zoom={13} 
-        className="h-custom w-custom shadow-lg rounded-lg"
+        className="h-custom w-80 md:w-custom shadow-lg rounded-lg"
       >
       
         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />

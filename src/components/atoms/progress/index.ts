@@ -1,9 +1,9 @@
-import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+import React from "react";
 
 export interface progressProps{
     wrapper?:string;
     color?:string;
-    icon?:IconDefinition;
+    Icon?:React.ElementType;
     name?:string;
     wordColor?:string;
 }
