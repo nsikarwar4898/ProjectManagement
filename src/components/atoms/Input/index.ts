@@ -1,3 +1,3 @@
-export interface inputProps{
-    placeholder:string;
+export interface inputProps {
+    placeholder: string;
 }

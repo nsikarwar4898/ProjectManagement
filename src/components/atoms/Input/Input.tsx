@@ -1,9 +1,9 @@
 import Box from '@mui/material/Box';
 import { TextField, InputAdornment } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
-import {inputProps} from "./index"
+import { inputProps } from './index';
 
-const Input = ({placeholder="Search for..."}:inputProps) => {
+const Input = ({ placeholder = 'Search for...' }: inputProps) => {
     return (
         <Box className="w-4/5 md:w-2/5">
             <TextField
@@ -15,11 +15,11 @@ const Input = ({placeholder="Search for..."}:inputProps) => {
                     '& .MuiOutlinedInput-root': {
                         borderRadius: '20px',
                     },
-                    "& input::placeholder": {
-                        color: "#204C5B", 
-                        opacity:1,
-                        fontWeight:600
-                      }
+                    '& input::placeholder': {
+                        color: '#204C5B',
+                        opacity: 1,
+                        fontWeight: 600,
+                    },
                 }}
                 slotProps={{
                     input: {
