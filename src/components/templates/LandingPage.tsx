@@ -1,4 +1,4 @@
-import Input from '../atoms/input/Input';
+import Input from '../atoms/Input/Input';
 import Globe from '../../assets/Globe.png';
 
 const LandingPage = () => {

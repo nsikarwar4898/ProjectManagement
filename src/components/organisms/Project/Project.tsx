@@ -5,12 +5,14 @@ import { faHeart } from '@fortawesome/free-regular-svg-icons';
 import { Share, Map, Building } from '../../../customIcons';
 import { projectProps } from './index';
 
-const Project = ({ progress="In Progress",
-   wrapper="bg-secondaryBlue max-h-max p-2 rounded-2xl m-2",
-   mode,
-    wordColor="text-tertiaryBlue font-medium",
-     icon=faHeart,
-      src=CompanyOne }: projectProps) => {
+const Project = ({
+  progress = 'In Progress',
+  wrapper = 'bg-secondaryBlue max-h-max p-2 rounded-2xl m-2',
+  mode,
+  wordColor = 'text-tertiaryBlue font-medium',
+  icon = faHeart,
+  src = CompanyOne,
+}: projectProps) => {
   return (
     <div className="flex flex-col items-center justify-center   md:m-2 ">
       <div className=" mt-2 rounded-t-xl flex flex-col justify-between   bg-gradient-to-b from-gray-100 via-gray-500 to-black h-52 w-4/5 md:w-full">
@@ -40,7 +42,7 @@ const Project = ({ progress="In Progress",
           <Map />
           <h1 className="text-quaternaryGrey mx-4 my-2">Location</h1>
         </div>
-        <div className="flex items-center rounded-3xl bg-secondaryGreen max-w-max p-2 m-2">
+        <div className="flex items-center rounded-3xl bg-secondaryGreenDark max-w-max p-2 m-2">
           <Building />
           <h1 className="text-primaryDarkblue font-medium mx-4">Commercial</h1>
         </div>
