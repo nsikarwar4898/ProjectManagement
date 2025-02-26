@@ -11,7 +11,8 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import CustomButton from '../atoms/button/Button';
+import CustomButton from '../atoms/Button/Button';
+import { Link } from 'react-router-dom';
 
 const pages = ['Projects', 'Products'];
 const settings = ['Signup', 'Login'];
@@ -42,12 +43,10 @@ const Navbar = () => {
   return (
     <AppBar
       position="static"
-      sx={{ backgroundColor: 'white', boxShadow: 'none'}}
+      sx={{ backgroundColor: 'white', boxShadow: 'none' }}
     >
-      <Container >
-        <Toolbar
-        sx={{width:"100%"}}
-        disableGutters>
+      <Container maxWidth={false}>
+        <Toolbar sx={{ width: '100%' }} disableGutters>
           <Typography
             variant="h6"
             noWrap
@@ -55,9 +54,9 @@ const Navbar = () => {
             href="#app-bar-with-responsive-menu"
             sx={{
               mr: 2,
-              pr:4,
-             
-              width:"full",
+              pr: 4,
+
+              width: 'full',
               display: { xs: 'none', md: 'flex' },
               fontFamily: 'monospace',
               fontWeight: 900,
@@ -67,7 +66,7 @@ const Navbar = () => {
               textDecoration: 'none',
             }}
           >
-            Logo
+            <Link to={'/'}>LOGO</Link>
           </Typography>
 
           <Box
@@ -136,7 +135,7 @@ const Navbar = () => {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            <Link to={'/'}>LOGO</Link>
           </Typography>
           <Box
             sx={{
@@ -154,7 +153,9 @@ const Navbar = () => {
                   display: 'block',
                 }}
               >
-                {page}
+                <Link to={page === 'Projects' ? '/projects' : '/products'}>
+                  {page}
+                </Link>
               </Button>
             ))}
           </Box>

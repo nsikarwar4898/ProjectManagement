@@ -1,9 +1,8 @@
-import Input from '../atoms/input/Input';
+import Input from '../atoms/Input/Input';
 import Navbar from '../../components/templates/Navbar';
 import { Home } from '../../customIcons/Home';
-  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGreaterThan } from '@fortawesome/free-solid-svg-icons';
-
 
 const Header = () => {
   return (
@@ -20,7 +19,7 @@ const Header = () => {
           icon={faGreaterThan}
           className="text-primaryGrey h-3 w-3 mx-2"
         />
-        <h1 className="text-primaryGreen bg-secondaryGreen px-2 py-1 rounded-xl">
+        <h1 className="text-primaryGreen bg-secondaryGreenDark px-2 py-1 rounded-xl">
           Projects
         </h1>
       </div>
